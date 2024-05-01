@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Age calculator app</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <form action="" id="age-form">
+          <div class="input">
+            <div class="item">
+              <label for="day" class="label"> DAY</label>
+              <input type="number" id="day" placeholder="DD" min="1" max="31" />
+              <div class="hidden error"></div>
+            </div>
+            <div class="item">
+              <label for="month" class="label">MONTH</label>
+              <input
+                type="number"
+                id="month"
+                placeholder="MM"
+                min="1"
+                max="12"
+              />
+              <div class="hidden error"></div>
+            </div>
+            <div class="item">
+              <label for="year" class="label">YEAR</label>
+              <input type="number" placeholder="YYYY" id="year" />
+              <div class="hidden error"></div>
+            </div>
+          </div>
+          <div class="submit">
+            <button type="submit">
+              <img src="assets/images/icon-arrow.svg" alt="" />
+            </button>
+          </div>
+        </form>
+      </header>
+      <article id="result">
+        <h1><span id="years">--</span>years</h1>
+        <h1><span id="months">--</span>months</h1>
+        <h1><span id="days">--</span>days</h1>
+      </article>
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Ardian Setiawan</a>.
+    </div>
+  </body>
+  <script src="main.js"></script>
+</html>
